@@ -28,8 +28,10 @@ class Word():
         try:
             self.__inFile = open(self.__fileName, 'r', 0)
             self.checkTypeOfVariable(self.__inFile, file)
+            logging.info('Opening archive success')
         except IOError:
             print 'Opening archive fail... File doesnt exist'
+            logging.error('Opening archive fail... File doesnt exist')
             exit(2)
 
     def readArchive(self):
