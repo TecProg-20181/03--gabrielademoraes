@@ -74,7 +74,7 @@ class Hangman:
         while letter.isalpha() == False or len(letter) != 1:
             print 'Please insert only letters'
             letter = str(raw_input('\033[32mPlease guess a letter:\033[0m '))
-        return str(letter)
+        return str(letter.lower())
 
     def hangman(self):
         guesses = int(8)
