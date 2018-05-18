@@ -6,7 +6,7 @@ from Classes.word import Word
 from Classes.hangman import Hangman
 
 logging.basicConfig(filename='hang.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
-WORDLIST_FILENAME = "teste.txt"
+WORDLIST_FILENAME = "words.txt"
 
 def checkTypeOfVariable(variable, correctType):
     if type(variable) != correctType:
